@@ -37,9 +37,28 @@ vysledek =    9    / 4
 vysledek =        2.25
 ```
 
-Funguje to i u složitých výrazů.
-Python se složitými výrazy nemá problém.
-Jen člověk, který program čte či píše, se v nich může lehce ztratit.
+Python dodržuje *prioritu operátorů*: např. násobení vyhodnotí dřív než
+sečítání.
+Záleží přitom vždy na operátoru (znaménku).
+Násobení čísel (`*`) a opakování řetězců (taky `*`) má vyšší prioritu;
+sečítání čísel (`+`) a spojování řetězců (taky `+`) ji má nižší.
+
+```python
+vysledek = 4 + 2 * 3
+#              ╰─┬─╯
+vysledek = 4 +   6
+#          ╰──┬──╯
+vysledek =  10
+
+vyzva = "Volejte třikrát: " + "Sláva! " * 3
+#                             ╰─────┬─────╯
+vyzva = "Volejte třikrát: " + "Sláva! Sláva! Sláva! "
+#       ╰────────────────────┬──────────────────────╯
+vyzva = "Volejte třikrát: Sláva! Sláva! Sláva! "
+```
+
+Python nemá problém se složitými výrazy – vyhodnocování funguje vždy stejně.
+Jen člověk, který program čte či píše, se ve výrazech může lehce ztratit.
 Když opravdu potřebuješ napsat složitý výraz, je dobré jej rozdělit na několik
 menších nebo vysvětlit pomocí komentáře.
 
@@ -75,18 +94,5 @@ x =              -3.25
 
 Výrazy se používají na více místech Pythonu než jen v přiřazování
 do proměnných.
-Třeba podmínka u `if` je taky výraz a vyhodnocuje se stejně jako ostatní
-výrazy:
-
-```python
-strana = -5
-
-if strana <= 0:
-    print("Strana musí být kladná!")
-```
-
-```python
-if strana <= 0:
-#  ╰──────┬──╯
-if      True  :
-```
+Třeba pro porovnání dvou hodnot.
+Ale o tom zase příště.
