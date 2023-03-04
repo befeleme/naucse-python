@@ -80,19 +80,16 @@ přímo ze stránek tvůrců: https://kate-editor.org/get-it/
 Na Linuxu budeš mít pravděpodobně už nainstalovaný Gedit nebo Kate.
 Zkus se podívat do systémové nabídky, jestli jeden z nich máš
 (případně je spusť z příkazové řádky jako `gedit`, resp. `kate`).
-Nemáš-li ani jeden, nainstaluj si jeden z nich pomocí svého manažera balíčků.
 
-Může to být příkaz:
-- Ubuntu: `sudo apt update && sudo apt install kate`
-- Fedora: `sudo dnf install kate`
-
-Až ho máš budeš mít nainstalovaný, klikni na odkaz níže a editor si nastav.
+Až si zvolíš svůj editor, klikni na odkaz níže pro instrukce k instalaci a nastavení.
 
 * [Kate]({{ subpage_url('kate') }}) - doporučený v tomto kurzu, bývá na systémech s prostředím KDE.
 * [Gedit]({{ subpage_url('gedit') }}) – bývá na systémech s prostředím GNOME.
 
 Máš-li už svůj oblíbený editor – Vim, Emacs, Geany, Notepad++, VS Code, apod., použij ten:
 
+* [Notepad++]({{ subpage_url('notepad-plus-plus') }})
+* [Visual Studio Code]({{ subpage_url('vscode') }})
 * [Ostatní]({{ subpage_url('others') }}) – máš-li jiný editor, zkontroluj
   si že je správně nastaven.
 
