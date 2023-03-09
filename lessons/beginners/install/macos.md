@@ -7,7 +7,7 @@ Jak na to?
 Spusť v příkazové řádce příkaz:
 
 ```console
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Pak zadej následující příkaz a Python bude nainstalovaný:
