@@ -1557,6 +1557,11 @@
                         "type": "lesson"
                     },
                     {
+                        "lesson_slug": "beginners/expressions",
+                        "title": "Vyhodnocování výrazů",
+                        "type": "lesson"
+                    },
+                    {
                         "title": "Videa ke shlédnutí",
                         "type": "special"
                     },
@@ -1574,6 +1579,11 @@
                         "external_url": "https://youtu.be/-zKws24FmCg",
                         "title": "(15:08) Proměnné – video",
                         "type": "none-link"
+                    },
+                    {
+                        "external_url": "https://youtu.be/nNXDXuN6Smg",
+                        "title": "(8:32) Vyhodnocování výrazů – video",
+                        "type": "none-link"
                     }
                 ],
                 "serial": "2",
@@ -1587,11 +1597,6 @@
                     {
                         "title": "Textové materiály",
                         "type": "special"
-                    },
-                    {
-                        "lesson_slug": "beginners/expressions",
-                        "title": "Vyhodnocování výrazů",
-                        "type": "lesson"
                     },
                     {
                         "lesson_slug": "beginners/comparisons",
@@ -1611,11 +1616,6 @@
                     {
                         "title": "Videa ke shlédnutí",
                         "type": "special"
-                    },
-                    {
-                        "external_url": "https://youtu.be/nNXDXuN6Smg",
-                        "title": "(8:32) Vyhodnocování výrazů – video",
-                        "type": "none-link"
                     },
                     {
                         "external_url": "https://youtu.be/Q1YJqWzfnck",
