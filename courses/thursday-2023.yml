@@ -72,6 +72,7 @@ plan:
   - lesson: beginners/hello-world
   - lesson: beginners/print
   - lesson: beginners/variables
+  - lesson: beginners/expressions
 
   - title: Videa ke shlédnutí
     url: null
@@ -82,6 +83,8 @@ plan:
     title: (12:38) Print a chybové hlášky – video
   - url: https://youtu.be/-zKws24FmCg
     title: (15:08) Proměnné – video
+  - url: https://youtu.be/nNXDXuN6Smg
+    title: (8:32) Vyhodnocování výrazů – video
 
   # - title: Další odkazy
   #   url: null
@@ -96,7 +99,6 @@ plan:
   materials:
   - title: Textové materiály
     url: null
-  - lesson: beginners/expressions
   - lesson: beginners/comparisons
   - lesson: beginners/functions
   - lesson: beginners/basic-functions
@@ -104,8 +106,6 @@ plan:
   - title: Videa ke shlédnutí
     url: null
 
-  - url: https://youtu.be/nNXDXuN6Smg
-    title: (8:32) Vyhodnocování výrazů – video
   - url: https://youtu.be/Q1YJqWzfnck
     title: (17:27) Porovnání – video
   - url: https://youtu.be/w_d8VKS8i48
