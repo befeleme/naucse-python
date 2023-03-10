@@ -64,7 +64,7 @@ plan:
     type: cheatsheet
 
 - slug: expressions
-  title: 'Výrazy'
+  title: 'Výrazy a podmínky'
   date: 2023-03-16
   materials:
   - title: Textové materiály
@@ -73,6 +73,7 @@ plan:
   - lesson: beginners/print
   - lesson: beginners/variables
   - lesson: beginners/expressions
+  - lesson: beginners/comparisons
 
   - title: Videa ke shlédnutí
     url: null
@@ -85,6 +86,8 @@ plan:
     title: (15:08) Proměnné – video
   - url: https://youtu.be/nNXDXuN6Smg
     title: (8:32) Vyhodnocování výrazů – video
+  - url: https://youtu.be/Q1YJqWzfnck
+    title: (17:27) Porovnání – video
 
   # - title: Další odkazy
   #   url: null
@@ -94,24 +97,25 @@ plan:
   #   type: homework
 
 - slug: conditions
-  title: 'Podmínky a funkce'
+  title: 'Funkce a želva'
   date: 2023-03-23
   materials:
   - title: Textové materiály
     url: null
-  - lesson: beginners/comparisons
+
   - lesson: beginners/functions
   - lesson: beginners/basic-functions
+  - lesson: intro/turtle
 
   - title: Videa ke shlédnutí
     url: null
 
-  - url: https://youtu.be/Q1YJqWzfnck
-    title: (17:27) Porovnání – video
   - url: https://youtu.be/w_d8VKS8i48
     title: (17:26) Funkce – video
   - url: https://youtu.be/udEOvGIuZrs
     title: (15:51) Užitečné funkce – video
+  - url: https://youtu.be/A__45ibnsnc
+    title: (33:02) Želva a cykly – video
 
   - title: Další odkazy
     url: null
@@ -124,12 +128,11 @@ plan:
   #   type: homework
 
 - slug: loops
-  title: 'Želva a cykly'
+  title: 'Cykly'
   date: 2023-03-30
   materials:
   - title: Textové materiály
     url: null
-  - lesson: intro/turtle
   - lesson: beginners/while
   - lesson: beginners/reassignment
   - lesson: beginners/and-or
@@ -137,8 +140,6 @@ plan:
   - title: Videa ke shlédnutí
     url: null
 
-  - url: https://youtu.be/A__45ibnsnc
-    title: (33:02) Želva a cykly – video
   - url: https://youtu.be/I_mkND45dB0
     title: (6:57) Cyklus While – video
   - url: https://youtu.be/fFh1LiksgdA
