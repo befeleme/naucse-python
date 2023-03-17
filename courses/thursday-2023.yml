@@ -96,7 +96,7 @@ plan:
   #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=expressions
   #   type: homework
 
-- slug: conditions
+- slug: loops
   title: 'Funkce a želva'
   date: 2023-03-23
   materials:
@@ -106,6 +106,7 @@ plan:
   - lesson: beginners/functions
   - lesson: beginners/basic-functions
   - lesson: intro/turtle
+  - lesson: beginners/reassignment
 
   - title: Videa ke shlédnutí
     url: null
@@ -116,6 +117,8 @@ plan:
     title: (15:51) Užitečné funkce – video
   - url: https://youtu.be/A__45ibnsnc
     title: (33:02) Želva a cykly – video
+  - url: https://youtu.be/fFh1LiksgdA
+    title: (9:28) Přepisování proměnných – video
 
   - title: Další odkazy
     url: null
@@ -127,39 +130,14 @@ plan:
   #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=expressions
   #   type: homework
 
-- slug: loops
-  title: 'Cykly'
+- slug: str
+  title: 'Cyklus `while` a řetězce'
   date: 2023-03-30
   materials:
   - title: Textové materiály
     url: null
   - lesson: beginners/while
-  - lesson: beginners/reassignment
   - lesson: beginners/and-or
-
-  - title: Videa ke shlédnutí
-    url: null
-
-  - url: https://youtu.be/I_mkND45dB0
-    title: (6:57) Cyklus While – video
-  - url: https://youtu.be/fFh1LiksgdA
-    title: (9:28) Přepisování proměnných – video
-  - url: https://youtu.be/5Mc-cgoaM10
-    title: (7:58) Nebo anebo a – video
-
-  # - title: Další odkazy
-  #   url: null
-
-  # - title: "Projekty (\U0001f422 \U0001f0b2\U0001f0b1)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=loops
-  #   type: homework
-
-- slug: str
-  title: 'Řetězce'
-  date: 2023-04-06
-  materials:
-  - title: Textové materiály
-    url: null
   - lesson: beginners/str
   - lesson: beginners/str-index-slice
   - lesson: beginners/str-methods
@@ -168,6 +146,10 @@ plan:
   - title: Videa ke shlédnutí
     url: null
 
+  - url: https://youtu.be/I_mkND45dB0
+    title: (6:57) Cyklus While – video
+  - url: https://youtu.be/5Mc-cgoaM10
+    title: (7:58) Nebo anebo a – video
   - url: https://youtu.be/xdZWIvryP20
     title: (19:54) Zápis řetězců – video
   - url: https://youtu.be/QOamCtzLPAo
@@ -183,14 +165,11 @@ plan:
   - title: Řetězcový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf
     type: cheatsheet
-  # - title: "Projekty (|‾)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=str
-  #   type: homework
 
 
 - slug: def
   title: 'Vlastní funkce'
-  date: 2023-04-13
+  date: 2023-04-06
   materials:
   - title: Textové materiály
     url: null
@@ -225,7 +204,7 @@ plan:
 
 - slug: exc
   title: 'Chyby a moduly'
-  date: 2023-04-20
+  date: 2023-04-13
   materials:
   - title: Textové materiály
     url: null
@@ -256,7 +235,7 @@ plan:
 
 - slug: test
   title: 'Rozhraní a testy'
-  date: 2023-04-27
+  date: 2023-04-20
   materials:
   - title: Textové materiály
     url: null
@@ -286,7 +265,7 @@ plan:
 
 - slug: list
   title: 'Seznamy a n-tice'
-  date: 2023-05-04
+  date: 2023-04-27
   materials:
   - title: Textové materiály
     url: null
@@ -317,7 +296,7 @@ plan:
 
 - slug: file
   title: 'Sekvence a soubory'
-  date: 2023-05-11
+  date: 2023-05-04
   materials:
   - title: Textové materiály
     url: null
@@ -346,7 +325,7 @@ plan:
 
 - slug: dict
   title: 'Slovníky'
-  date: 2023-05-18
+  date: 2023-05-11
   materials:
   - title: Textové materiály
     url: null
@@ -376,7 +355,7 @@ plan:
 
 - slug: class
   title: 'Třídy a dědičnost'
-  date: 2023-05-25
+  date: 2023-05-18
   materials:
   - title: Textové materiály
     url: null
