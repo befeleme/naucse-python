@@ -1624,6 +1624,11 @@
                         "type": "lesson"
                     },
                     {
+                        "lesson_slug": "beginners/reassignment",
+                        "title": "Přepisování proměnných",
+                        "type": "lesson"
+                    },
+                    {
                         "title": "Videa ke shlédnutí",
                         "type": "special"
                     },
@@ -1643,6 +1648,11 @@
                         "type": "none-link"
                     },
                     {
+                        "external_url": "https://youtu.be/fFh1LiksgdA",
+                        "title": "(9:28) Přepisování proměnných – video",
+                        "type": "none-link"
+                    },
+                    {
                         "title": "Další odkazy",
                         "type": "special"
                     },
@@ -1653,7 +1663,7 @@
                     }
                 ],
                 "serial": "3",
-                "slug": "conditions",
+                "slug": "loops",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Funkce a želva"
             },
@@ -1670,46 +1680,9 @@
                         "type": "lesson"
                     },
                     {
-                        "lesson_slug": "beginners/reassignment",
-                        "title": "Přepisování proměnných",
-                        "type": "lesson"
-                    },
-                    {
                         "lesson_slug": "beginners/and-or",
                         "title": "Nebo anebo a",
                         "type": "lesson"
-                    },
-                    {
-                        "title": "Videa ke shlédnutí",
-                        "type": "special"
-                    },
-                    {
-                        "external_url": "https://youtu.be/I_mkND45dB0",
-                        "title": "(6:57) Cyklus While – video",
-                        "type": "none-link"
-                    },
-                    {
-                        "external_url": "https://youtu.be/fFh1LiksgdA",
-                        "title": "(9:28) Přepisování proměnných – video",
-                        "type": "none-link"
-                    },
-                    {
-                        "external_url": "https://youtu.be/5Mc-cgoaM10",
-                        "title": "(7:58) Nebo anebo a – video",
-                        "type": "none-link"
-                    }
-                ],
-                "serial": "4",
-                "slug": "loops",
-                "source_file": "courses/thursday-2023.yml",
-                "title": "Cykly"
-            },
-            {
-                "date": "2023-04-06",
-                "materials": [
-                    {
-                        "title": "Textové materiály",
-                        "type": "special"
                     },
                     {
                         "lesson_slug": "beginners/str",
@@ -1734,6 +1707,16 @@
                     {
                         "title": "Videa ke shlédnutí",
                         "type": "special"
+                    },
+                    {
+                        "external_url": "https://youtu.be/I_mkND45dB0",
+                        "title": "(6:57) Cyklus While – video",
+                        "type": "none-link"
+                    },
+                    {
+                        "external_url": "https://youtu.be/5Mc-cgoaM10",
+                        "title": "(7:58) Nebo anebo a – video",
+                        "type": "none-link"
                     },
                     {
                         "external_url": "https://youtu.be/xdZWIvryP20",
@@ -1765,13 +1748,13 @@
                         "type": "cheatsheet"
                     }
                 ],
-                "serial": "5",
+                "serial": "4",
                 "slug": "str",
                 "source_file": "courses/thursday-2023.yml",
-                "title": "Řetězce"
+                "title": "Cyklus `while` a řetězce"
             },
             {
-                "date": "2023-04-13",
+                "date": "2023-04-06",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -1841,13 +1824,13 @@
                         "type": "none-link"
                     }
                 ],
-                "serial": "6",
+                "serial": "5",
                 "slug": "def",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Vlastní funkce"
             },
             {
-                "date": "2023-04-20",
+                "date": "2023-04-13",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -1897,13 +1880,13 @@
                         "type": "cheatsheet"
                     }
                 ],
-                "serial": "7",
+                "serial": "6",
                 "slug": "exc",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Chyby a moduly"
             },
             {
-                "date": "2023-04-27",
+                "date": "2023-04-20",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -1949,13 +1932,13 @@
                         "type": "none-link"
                     }
                 ],
-                "serial": "8",
+                "serial": "7",
                 "slug": "test",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Rozhraní a testy"
             },
             {
-                "date": "2023-05-04",
+                "date": "2023-04-27",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -2005,13 +1988,13 @@
                         "type": "cheatsheet"
                     }
                 ],
-                "serial": "9",
+                "serial": "8",
                 "slug": "list",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Seznamy a n-tice"
             },
             {
-                "date": "2023-05-11",
+                "date": "2023-05-04",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -2057,13 +2040,13 @@
                         "type": "none-link"
                     }
                 ],
-                "serial": "10",
+                "serial": "9",
                 "slug": "file",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Sekvence a soubory"
             },
             {
-                "date": "2023-05-18",
+                "date": "2023-05-11",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -2113,13 +2096,13 @@
                         "type": "cheatsheet"
                     }
                 ],
-                "serial": "11",
+                "serial": "10",
                 "slug": "dict",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Slovníky"
             },
             {
-                "date": "2023-05-25",
+                "date": "2023-05-18",
                 "materials": [
                     {
                         "title": "Textové materiály",
@@ -2159,7 +2142,7 @@
                         "type": "none-link"
                     }
                 ],
-                "serial": "12",
+                "serial": "11",
                 "slug": "class",
                 "source_file": "courses/thursday-2023.yml",
                 "title": "Třídy a dědičnost"
