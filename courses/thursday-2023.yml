@@ -62,6 +62,9 @@ plan:
   - title: Tahák na klávesnici (PDF)
     url: https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf
     type: cheatsheet
+  - title: 'Projekty (✊✌✋)'
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=preparation
+    type: homework
 
 - slug: expressions
   title: 'Výrazy a podmínky'
@@ -89,12 +92,12 @@ plan:
   - url: https://youtu.be/Q1YJqWzfnck
     title: (17:27) Porovnání – video
 
-  # - title: Další odkazy
-  #   url: null
+  - title: Další odkazy
+    url: null
 
-  # - title: 'Projekty (✊✌✋)'
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=expressions
-  #   type: homework
+  - title: 'Projekty (✊✌✋)'
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=expressions
+    type: homework
 
 - slug: loops
   title: 'Funkce a želva'
@@ -126,9 +129,9 @@ plan:
   - title: Tahák na užitečné funkce (PDF)
     url: https://pyvec.github.io/cheatsheets/basic-functions/basic-functions-cs.pdf
     type: cheatsheet
-  # - title: 'Projekty (✊✌✋)'
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=expressions
-  #   type: homework
+  - title: 'Projekty (✊✌✋)'
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=loops
+    type: homework
 
 - slug: str
   title: 'Cyklus `while` a řetězce'
@@ -165,6 +168,9 @@ plan:
   - title: Řetězcový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf
     type: cheatsheet
+  - title: 'Projekty (✊✌✋)'
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=str
+    type: homework
 
 
 - slug: opak
@@ -172,7 +178,9 @@ plan:
   date: 2023-04-06
   materials:
   - lesson: beginners/placeholder
-
+  - title: 'Projekty'
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=opak
+    type: homework
 
 
 - slug: def
@@ -206,9 +214,9 @@ plan:
 
   - title: Python Tutor
     url: http://pythontutor.com/visualize.html#mode=edit
-  # - title: "Projekty (⚁⚃⚅)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=def
-  #   type: homework
+  - title: "Projekty"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=def
+    type: homework
 
 - slug: exc
   title: 'Chyby a moduly'
@@ -236,9 +244,9 @@ plan:
   - title: Výjimkový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/exceptions/exceptions-cs.pdf
     type: cheatsheet
-  # - title: "Projekty (×○×○)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=exc
-  #   type: homework
+  - title: "Projekty (×○×○)"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=exc
+    type: homework
 
 
 - slug: test
@@ -263,12 +271,12 @@ plan:
   - url: https://youtu.be/s-KPxX5ZcMs
     title: (3:53) Negativní testy – video
 
-  # - title: Další odkazy
-  #   url: null
+  - title: Další odkazy
+    url: null
 
-  # - title: "Projekty (✕✕✕)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=test
-  #   type: homework
+  - title: "Projekty (✕✕✕)"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=test
+    type: homework
 
 
 - slug: list
@@ -297,9 +305,9 @@ plan:
   - title: Tahák na seznamy (PDF)
     url: https://pyvec.github.io/cheatsheets/lists/lists-cs.pdf
     type: cheatsheet
-  # - title: "Projekty – [\U0001f436\U0001f431\U0001f430\U0001f40d]"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=list
-  #   type: homework
+  - title: "Projekty – [\U0001f436\U0001f431\U0001f430\U0001f40d]"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=list
+    type: homework
 
 
 - slug: file
@@ -323,12 +331,12 @@ plan:
   - url: https://youtu.be/1X4TU_thg7s
     title: (13:17) Soubory – video
 
-  # - title: Další odkazy
-  #   url: null
+  - title: Další odkazy
+    url: null
 
-  # - title: Projekty (⚔️)
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=file
-  #   type: homework
+  - title: Projekty (⚔️)
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=file
+    type: homework
 
 
 - slug: dict
@@ -357,9 +365,9 @@ plan:
   - title: Slovníkový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf
     type: cheatsheet
-  # - title: "Projekty (💾)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=dict
-  #   type: homework
+  - title: "Projekty (💾)"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=dict
+    type: homework
 
 - slug: class
   title: 'Třídy a dědičnost'
@@ -381,8 +389,8 @@ plan:
   - title: Další odkazy
     url: null
 
-  # - title: "Projekty (♟♚)"
-  #   url: https://projekty.pyladies.cz/session?course=pyladies-2022-brno-podzim-utery&session=class
-  #   type: homework
+  - title: "Projekty (♟♚)"
+    url: https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=class
+    type: homework
   - title: Odkazy na další materiály
     url: https://www.fi.muni.cz/IB111/sbirka/
