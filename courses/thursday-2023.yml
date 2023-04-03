@@ -167,9 +167,17 @@ plan:
     type: cheatsheet
 
 
+- slug: opak
+  title: 'Opakování'
+  date: 2023-04-06
+  materials:
+  - lesson: beginners/placeholder
+
+
+
 - slug: def
   title: 'Vlastní funkce'
-  date: 2023-04-06
+  date: 2023-04-13
   materials:
   - title: Textové materiály
     url: null
@@ -204,7 +212,7 @@ plan:
 
 - slug: exc
   title: 'Chyby a moduly'
-  date: 2023-04-13
+  date: 2023-04-20
   materials:
   - title: Textové materiály
     url: null
@@ -235,7 +243,7 @@ plan:
 
 - slug: test
   title: 'Rozhraní a testy'
-  date: 2023-04-20
+  date: 2023-04-27
   materials:
   - title: Textové materiály
     url: null
@@ -265,7 +273,7 @@ plan:
 
 - slug: list
   title: 'Seznamy a n-tice'
-  date: 2023-04-27
+  date: 2023-05-04
   materials:
   - title: Textové materiály
     url: null
@@ -296,7 +304,7 @@ plan:
 
 - slug: file
   title: 'Sekvence a soubory'
-  date: 2023-05-04
+  date: 2023-05-11
   materials:
   - title: Textové materiály
     url: null
@@ -325,7 +333,7 @@ plan:
 
 - slug: dict
   title: 'Slovníky'
-  date: 2023-05-11
+  date: 2023-05-18
   materials:
   - title: Textové materiály
     url: null
@@ -355,7 +363,7 @@ plan:
 
 - slug: class
   title: 'Třídy a dědičnost'
-  date: 2023-05-18
+  date: 2023-05-25
   materials:
   - title: Textové materiály
     url: null
