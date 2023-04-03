@@ -1552,6 +1552,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf",
                         "title": "Tahák na klávesnici (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=preparation",
+                        "title": "Projekty (✊✌✋)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "1",
@@ -1619,6 +1624,15 @@
                         "external_url": "https://youtu.be/Q1YJqWzfnck",
                         "title": "(17:27) Porovnání – video",
                         "type": "none-link"
+                    },
+                    {
+                        "title": "Další odkazy",
+                        "type": "special"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=expressions",
+                        "title": "Projekty (✊✌✋)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "2",
@@ -1685,6 +1699,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/basic-functions/basic-functions-cs.pdf",
                         "title": "Tahák na užitečné funkce (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=loops",
+                        "title": "Projekty (✊✌✋)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "3",
@@ -1771,6 +1790,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf",
                         "title": "Řetězcový tahák (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=str",
+                        "title": "Projekty (✊✌✋)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "4",
@@ -1785,6 +1809,11 @@
                         "lesson_slug": "beginners/placeholder",
                         "title": "Opakování",
                         "type": "lesson"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=opak",
+                        "title": "Projekty",
+                        "type": "homework"
                     }
                 ],
                 "serial": "5",
@@ -1861,6 +1890,11 @@
                         "external_url": "http://pythontutor.com/visualize.html#mode=edit",
                         "title": "Python Tutor",
                         "type": "none-link"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=def",
+                        "title": "Projekty",
+                        "type": "homework"
                     }
                 ],
                 "serial": "6",
@@ -1917,6 +1951,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/exceptions/exceptions-cs.pdf",
                         "title": "Výjimkový tahák (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=exc",
+                        "title": "Projekty (×○×○)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "7",
@@ -1969,6 +2008,15 @@
                         "external_url": "https://youtu.be/s-KPxX5ZcMs",
                         "title": "(3:53) Negativní testy – video",
                         "type": "none-link"
+                    },
+                    {
+                        "title": "Další odkazy",
+                        "type": "special"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=test",
+                        "title": "Projekty (✕✕✕)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "8",
@@ -2025,6 +2073,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/lists/lists-cs.pdf",
                         "title": "Tahák na seznamy (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=list",
+                        "title": "Projekty – [🐶🐱🐰🐍]",
+                        "type": "homework"
                     }
                 ],
                 "serial": "9",
@@ -2077,6 +2130,15 @@
                         "external_url": "https://youtu.be/1X4TU_thg7s",
                         "title": "(13:17) Soubory – video",
                         "type": "none-link"
+                    },
+                    {
+                        "title": "Další odkazy",
+                        "type": "special"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=file",
+                        "title": "Projekty (⚔️)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "10",
@@ -2133,6 +2195,11 @@
                         "external_url": "https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf",
                         "title": "Slovníkový tahák (PDF)",
                         "type": "cheatsheet"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=dict",
+                        "title": "Projekty (💾)",
+                        "type": "homework"
                     }
                 ],
                 "serial": "11",
@@ -2174,6 +2241,11 @@
                     {
                         "title": "Další odkazy",
                         "type": "special"
+                    },
+                    {
+                        "external_url": "https://projekty.pyladies.cz/session?course=pyladies-2023-brno-jaro-ctvrtek&session=class",
+                        "title": "Projekty (♟♚)",
+                        "type": "homework"
                     },
                     {
                         "external_url": "https://www.fi.muni.cz/IB111/sbirka/",
