@@ -28,6 +28,7 @@ sessions:
 - title: První program
   slug: hello
   materials:
+  - lesson: adm/close-paren
   - lesson: beginners/hello-world
   - lesson: beginners/print
   - lesson: beginners/variables
