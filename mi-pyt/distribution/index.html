@@ -33,17 +33,18 @@ co se dá importovat z Pythonu, v tomto textu tedy především Python soubor ne
 <li><strong>balíček</strong> (<em>Distribution Package</em>) je instalovatelný archiv obsahující
 <em>importovatelné moduly</em> pro Python a další potřebné soubory, může být i rozbalený;</li>
 <li><strong>zdrojový balíček</strong> (<em>Source Distribution</em>, <code>sdist</code>) je varianta zabaleného <em>balíčku</em> ve zdrojové formě;</li>
-<li><strong>binární balíček</strong> (<em>Binary Distribution</em>, <code>bdist</code>, <code>wheel</code>) je varianta zabaleného <em>balíčku</em> v nezdrojové (např. zkompilované) formě;</li>
+<li><strong>binární balíček</strong> (<em>Binary Distribution</em>, <code>bdist</code>) je varianta zabaleného <em>balíčku</em> v nezdrojové (např. zkompilované) formě, nejčastější podoba toho balíčku se jmenuje <code>wheel</code>;</li>
 <li><strong>projekt</strong> (<em>Project</em>) je knihovna, framework, skript, plugin, aplikace apod. (či jejich kombinace), které balíme do <em>balíčků</em>.</li>
 </ul>
 <h2 id="pyprojecttoml">pyproject.toml
 <a href="#pyprojecttoml" class="header-link">#</a>
 </h2>
 <p>Základním stavebním kamenem Python balíčku je soubor <code>pyproject.toml</code>, který
-obsahuje všechna potřebná metadata pro vytvoření zdrojového a binárního balíčku.
-TOML je datový formát, který se dobře píše člověkem a čte počítačem.
-Jehož plnou specifikaci můžete najít v oficiální <a href="https://toml.io/en/">dokumentaci</a>.</p>
-<p>Pojďme vytvořit jeho minimální variantu. Použijeme balíček <code>setuptools</code> jako tzv. <em>build backend</em>,
+obsahuje všechna potřebná metadata pro vytvoření zdrojového i binárního balíčku.
+Soubor používá jazyk TOML, což je datový formát, který se dobře píše člověkem a čte počítačem.
+Plnou specifikaci TOMLu můžete najít v oficiální <a href="https://toml.io/en/">dokumentaci tohoto jazyka</a>.</p>
+<p>Pojďme vytvořit minimální variantu souboru <code>pyproject.toml</code>.
+Použijeme balíček <code>setuptools</code> jako tzv. <em>build backend</em>,
 tedy program, který náš balíček vytvoří. Existují také jiné <em>build backendy</em> s jinými vlastnostmi -
 jaké to jsou a jak je použít, se dozvíte z oficiálního <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">tutoriálu, jak tvořit Python balíčky</a>.</p>
 <div class="highlight"><pre><span></span><span class="k">[build-system]</span>
@@ -104,8 +105,8 @@ a vytvoří zdrojovou a binární distribuci.</p>
 </ul>
 <p>Můžete je rozbalit pomocí systémových nástrojů a podívat se dovnitř.</p>
 <div class="admonition note"><p><code>whl</code> je ve skutečnosti stejný formát jako <code>zip</code>,
-takže pokud vaše systémové nástroje ho neumí detekovat,
-stačí přejmenovat rozšíření souboru na <code>.zip</code>.</p>
+takže pokud ho vaše systémové nástroje neumí otevřít,
+stačí před otevřením změnit příponu souboru na <code>.zip</code>.</p>
 </div><p>Můžete také vytvořit pouze zdrojový nebo pouze binární balíček pomocí přepínačů <code>--sdist</code>, resp. <code>--wheel</code>.</p>
 <h2 id="extra_soubory_do_zdrojoveho_balicku">Extra soubory do zdrojového balíčku
 <a href="#extra_soubory_do_zdrojoveho_balicku" class="header-link">#</a>
@@ -193,7 +194,7 @@ Co ale dělat, pokud je náš projekt větší a obsahuje souborů více?</p>
 <span class="go">    └── __init__.py</span>
 </pre></div><p>Soubor <code>__init__.py</code> jednak značí, že adresář <code>isholiday</code> je importovatelný modul,
 a také obsahuje kód, který se spustí při importu modulu <code>isholiday</code>.</p>
-<p><code>build</code> bude této změně automaticky rozumět, což si můžete vyzkoušet vytvořením a prozkoumáním balíčku.</p>
+<p><code>setuptools</code> bude této změně automaticky rozumět, což si můžete vyzkoušet vytvořením a prozkoumáním balíčku.</p>
 <p>Momentálně máme všechen kód přímo v <code>__init__.py</code>, což sice funguje,
 ale ideální to není. Dobré je mít kód v samostatných souborech a v <code>__init__.py</code>
 pouze importovat veřejné rozhraní, tedy to, co budou z vašeho modulu importovat
@@ -372,7 +373,7 @@ Například aplikace ve Flasku potřebují <em>templates</em>.</p>
 <a href="#wheel_binarni_balicky" class="header-link">#</a>
 </h2>
 <p>Zatím jsme se zabývali jen zdrojovými balíčky (<code>sdist</code>).
-Existují ale i balíčky „zkompilované” – binární (<code>wheel</code>).
+Existují ale i balíčky „zkompilované” – binární (<code>bdist</code>, nejčastěji <code>wheel</code>).
 Když se instaluje zdrojový balíček, pip prvně vytvoří <code>wheel</code>, a následně ho rozbalí
 na patříčné místo. Binární balíček se už jen rozbalí.</p>
 <p>Z historických důvodů existuje několik různých druhů binárních distribucí,
