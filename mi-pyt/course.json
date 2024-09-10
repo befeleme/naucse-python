@@ -861,6 +861,7 @@
                             "https://packaging.python.org/glossary",
                             "https://pypi.org",
                             "https://pypi.org/account/register/",
+                            "https://pypi.org/help/#totp",
                             "https://pypi.org/pypi?%3Aaction=list_classifiers",
                             "https://setuptools.pypa.io/en/latest/userguide/datafiles.html#data-files-support",
                             "https://test.pypi.org/account/register/",

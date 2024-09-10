@@ -34,7 +34,9 @@ co se dá importovat z Pythonu, v tomto textu tedy především Python soubor ne
 <em>importovatelné moduly</em> pro Python a další potřebné soubory, může být i rozbalený;</li>
 <li><strong>zdrojový balíček</strong> (<em>Source Distribution</em>, <code>sdist</code>) je varianta zabaleného <em>balíčku</em> ve zdrojové formě;</li>
 <li><strong>binární balíček</strong> (<em>Binary Distribution</em>, <code>bdist</code>) je varianta zabaleného <em>balíčku</em> v nezdrojové (např. zkompilované) formě, nejčastější podoba toho balíčku se jmenuje <code>wheel</code>;</li>
-<li><strong>projekt</strong> (<em>Project</em>) je knihovna, framework, skript, plugin, aplikace apod. (či jejich kombinace), které balíme do <em>balíčků</em>.</li>
+<li><strong>projekt</strong> (<em>Project</em>) je knihovna, framework, skript, plugin, aplikace apod. (či jejich kombinace), které balíme do <em>balíčků</em>;</li>
+<li><strong>build backend</strong> je program, který vytváří z projektu balíček. Existuje mnoho takových programů, které mají různé vlastnosti a hodí se k různým účelům.
+Jejich přehled najdete třeba na oficiálním <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">tutoriálu, jak tvořit Python balíčky</a>.</li>
 </ul>
 <h2 id="pyprojecttoml">pyproject.toml
 <a href="#pyprojecttoml" class="header-link">#</a>
@@ -44,9 +46,7 @@ obsahuje všechna potřebná metadata pro vytvoření zdrojového i binárního 
 Soubor používá jazyk TOML, což je datový formát, který se dobře píše člověkem a čte počítačem.
 Plnou specifikaci TOMLu můžete najít v oficiální <a href="https://toml.io/en/">dokumentaci tohoto jazyka</a>.</p>
 <p>Pojďme vytvořit minimální variantu souboru <code>pyproject.toml</code>.
-Použijeme balíček <code>setuptools</code> jako tzv. <em>build backend</em>,
-tedy program, který náš balíček vytvoří. Existují také jiné <em>build backendy</em> s jinými vlastnostmi -
-jaké to jsou a jak je použít, se dozvíte z oficiálního <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">tutoriálu, jak tvořit Python balíčky</a>.</p>
+Použijeme balíček <code>setuptools</code> jako náš build backend.</p>
 <div class="highlight"><pre><span></span><span class="k">[build-system]</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;setuptools&gt;=61.0&quot;</span><span class="p">]</span>
 <span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;setuptools.build_meta&quot;</span>
@@ -294,24 +294,22 @@ v <code>pyproject.toml</code>.</p>
 <p>Balíček jde zaregistrovat a nahrát na PyPI. Použijeme pro to program <code>twine</code>
 (instalovatelný přes pip).</p>
 <p>Budete si potřebovat zařídit
-<a href="https://pypi.org/account/register/">účet na PyPI</a>,
-<a href="https://test.pypi.org/account/register/">účet na testovací PyPI</a>
-a vytvořit konfigurační soubor <code>~/.pypirc</code>:</p>
+<a href="https://test.pypi.org/account/register/">účet na testovací PyPI</a>.
+Od roku 2023 proces registrace zahrnuje nastavení dvoufaktorové autentikace
+pro práci s PyPI.
+Budete pro to potřebovat TOTP aplikaci - pokud jste ji zatím nepoužívali,
+podívejte se na <a href="https://pypi.org/help/#totp">doporučení od administrátorů PyPI</a>.
+Poté, co si nastavíte dvoufaktorový přístup na účet, budete moci vytvořit API
+token pro nahrávání balíčků.
+Vytvořte nový token a vložte jeho hodnotu do konfiguračního souboru <code>~/.pypirc</code>:</p>
 <div class="highlight"><pre><span></span><span class="k">[distutils]</span>
 <span class="na">index-servers</span><span class="o">=</span>
-<span class="w">    </span><span class="na">pypi</span>
 <span class="w">    </span><span class="na">testpypi</span>
 
-<span class="k">[pypi]</span>
-<span class="na">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;your user name goes here&gt;</span>
-<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;your password goes here&gt;</span>
-
 <span class="k">[testpypi]</span>
-<span class="na">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://test.pypi.org/legacy/</span>
-<span class="na">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;your user name goes here&gt;</span>
-<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;your password goes here&gt;</span>
-</pre></div><p>Hesla můžete vynechat, pokud je budete chtít pokaždé zadávat.</p>
-<p>Používáte-li Windows, je potřeba nastavit proměnnou prostředí <code>HOME</code> na adresář
+<span class="na">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">__token__</span>
+<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;TestPyPI token&gt;</span>
+</pre></div><p>Používáte-li Windows, je potřeba nastavit proměnnou prostředí <code>HOME</code> na adresář
 se souborem <code>.pypirc</code>, např:</p>
 <div class="highlight"><pre><span></span><span class="gp">&gt; </span>set HOME=C:\cesta\k\nastaveni
 </pre></div><p>Registrace projektu a nahrání na testovací PyPI se provádí pomocí příkazu
@@ -326,10 +324,27 @@ kterým to povlíte přes webové rozhraní.
 Po úspěšném nahrání lze nahrávat další verze balíčku, ale musí být novější
 než ta, co už na PyPI je. Nejde tedy jednou nahraný balíček přepsat.</p>
 <p>Svůj balíček najdete na <code>https://test.pypi.org/project/&lt;název_balíčku&gt;/</code>.</p>
-<p>Pro nahrání na opravdovou PyPI stačí vynechat <code>-r testpypi</code>.
+<div class="admonition note"><p>Až budete chtít nahrávat opravdové balíčky na PyPI, vytvořte si
+<a href="https://pypi.org/account/register/">účet na PyPI</a>.
+Všechny kroky budou třeba provést znovu, včetně nastavení
+dvoufaktorové autentikace a vygenerování nového tokenu.
+Pak aktualizujte konfigurační soubor <code>~/.pypirc</code>:</p>
+<div class="highlight"><pre><span></span><span class="k">[distutils]</span>
+<span class="na">index-servers</span><span class="o">=</span>
+<span class="w">    </span><span class="na">pypi</span>
+<span class="w">    </span><span class="na">testpypi</span>
+
+<span class="k">[pypi]</span>
+<span class="na">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">__token__</span>
+<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;PyPI token&gt;</span>
+
+<span class="k">[testpypi]</span>
+<span class="na">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">__token__</span>
+<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;TestPyPI token&gt;</span>
+</pre></div><p>Pro nahrání na opravdovou PyPI stačí vynechat <code>-r testpypi</code>.
 Zabírat jména na opravdové PyPI jen tak není hezké vůči ostatním Pythonistům;
 registrujte tedy prosím jen balíčky, které budou nějak pro ostatní užitečné.</p>
-<h2 id="instalace_pomoci_pip">Instalace pomocí pip
+</div><h2 id="instalace_pomoci_pip">Instalace pomocí pip
 <a href="#instalace_pomoci_pip" class="header-link">#</a>
 </h2>
 <p>Projekt nahraný na PyPI by mělo jít nainstalovat pomocí pipu.
